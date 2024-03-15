@@ -43,7 +43,7 @@
     <div class="text-h2">
       <h1>Các sản phẩm cung cấp</h1>
     </div>
-    <swiper-container [slidesPerView]="3" [zoom]="false" navigation="true" >
+    <swiper-container [slidesPerView]="2" [zoom]="false" navigation="true" [loop]="true" [speed]="1500" [autoplay]="{enable:true,delay:1500}">
       <swiper-slide *ngFor="let item of product">
         <ion-card>
           <ion-row>
