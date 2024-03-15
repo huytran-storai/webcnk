@@ -1,0 +1,25 @@
+ion-row {
+    justify-content: center;
+}
+ion-img {
+    width: 200px;
+    height: 200px;
+}
+ion-card-header {
+    ion-label {
+        font-weight: 600;
+    }
+}
+.footer {
+    background-color: azure;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}

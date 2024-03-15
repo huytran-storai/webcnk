@@ -1,20 +1,105 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-row>
+      <ion-img src="../../assets/icon/Picture1.png" alt="logo"></ion-img>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="bg-top">
+    <div class="text">
+      <h1>CÔNG TY TNHH </h1>
+      <h2>THIẾT BỊ CÔNG NGHIỆP CNK</h2>
+      <ion-button color="warning"><ion-icon name="call-outline"></ion-icon> Liên Hệ</ion-button>
+    </div>
   </div>
+  <div class="bg-mid">
+    <div class="text-h2">
+      <h1>Giới thiệu</h1>
+    </div>
+    <ion-row>
+      <ion-col size="4">
+        <ion-img src="../../assets/icon/bg55.jpg" alt="hình ảnh minh họa"></ion-img>
+      </ion-col>
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Công Ty TNHH THIẾT BỊ CÔNG NGHIỆP CNK</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            "Công ty chúng tôi là địa chỉ đáng tin cậy, chuyên nhập khẩu và cung cấp trực tiếp các sản phẩm chất lượng
+            từ những thương hiệu uy tín trên toàn cầu, phục vụ đa dạng ngành nghề như cơ khí chế tạo, xây dựng, sản xuất
+            và bảo hộ lao động. <br/> Với danh mục sản phẩm đa dạng như dụng cụ khí nén, đinh công nghiệp, dây đai, màng PE,
+            túi giữ ẩm, thước kéo và mặt nạ phòng độc, chúng tôi cam kết nhập khẩu đúng hãng với chứng chỉ CO/CQ. <br/>Đi kèm
+            với nguồn nhân lực có uy tín và cam kết về chất lượng, chúng tôi đang dần trở thành đối tác quen thuộc
+            của nhiều công ty, nhà máy và khu công nghiệp."
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="product-list">
+    <div class="text-h2">
+      <h1>Các sản phẩm cung cấp</h1>
+    </div>
+    <swiper-container [slidesPerView]="3" [zoom]="false" navigation="true" >
+      <swiper-slide *ngFor="let item of product">
+        <ion-card>
+          <ion-row>
+            <ion-img alt="{{item.nameProd}}" src={{item.imgProd}} />
+          </ion-row>
+          <ion-card-header>
+            <ion-label>{{item.nameProd}}</ion-label>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label>BÁO GIÁ LIÊN HỆ: </ion-label>
+            Ms: Như 0385390164, 
+            Ms. Ngọc 0978225941
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+    <div class="button-t1">
+      <ion-button [routerLink]="['/product-page']">Xem Tất Cả Sản Phẩm Tại Đây</ion-button>
+    </div>
+  </div>
+  <div class="bg-mid">
+    <div class="text-h2">
+      <h1>Cam kết</h1>
+    </div>
+    <ion-row>
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Công Ty TNHH THIẾT BỊ CÔNG NGHIỆP CNK</ion-card-subtitle>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-content></ion-content>
+            "Chúng tôi cam kết đồng hành cùng khách hàng và đối tác để tạo lập các giá trị văn hóa và kinh tế, góp phần
+            nâng cao chất lượng cuộc sống và sự phát triển trong ngành công nghiệp Việt Nam.
+
+            <br/>Chúng tôi luôn tuân thủ phương châm 'Uy Tín – Chất Lượng', đặt lên hàng đầu trong mọi hoạt động kinh doanh
+            của mình.
+
+            Rất mong nhận được sự quan tâm và ủng hộ từ quý khách hàng. <br/> Xin chúc quý khách hàng An Khang Thịnh Vượng!"
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="4">
+        <ion-img src="../../assets/icon/camkey.jpg" alt="hình ảnh minh họa"></ion-img>
+      </ion-col>
+
+    </ion-row>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Mọi thông tin liên hệ:</p>
+      <p>CÔNG TY TRÁCH NHIỆM HỮU HẠN THIẾT BỊ CÔNG NGHIỆP CNK</p>
+      <p>Địa chỉ: 72 Linh Trung, phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam. MST: 0317193833</p>
+      <p>EMAIL: cnk.tbcn&#64;gmail.com</p>
+      <p>Ms. Nhu | SĐT: 0837529408</p>
+    </div>
+  </footer>
 </ion-content>
