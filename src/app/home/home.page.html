@@ -11,7 +11,43 @@
     <div class="text">
       <h1>CÔNG TY TNHH </h1>
       <h2>THIẾT BỊ CÔNG NGHIỆP CNK</h2>
-      <ion-button color="warning"><ion-icon name="call-outline"></ion-icon> Liên Hệ</ion-button>
+      <ion-button color="warning" id="open-modal"><ion-icon name="call-outline"></ion-icon>Liên Hệ</ion-button>
+      <ion-modal #modal trigger="open-modal">
+        <ng-template>
+          <ion-content>
+            <ion-toolbar>
+              <ion-title>CTV Liên Hệ</ion-title>
+              <ion-buttons slot="end">
+                <ion-button color="light" (click)="modal.dismiss()">Đóng</ion-button>
+              </ion-buttons>
+            </ion-toolbar>
+            <ion-list>
+              <ion-item>
+                <ion-avatar slot="start">
+                  <ion-icon name="logo-ionitron"></ion-icon>
+                </ion-avatar>
+                <ion-label>
+                  <h2>Ms.Như</h2>
+                  <a href="tel:0385390164">
+                    <ion-button>Số điện thoại: 0385390164</ion-button>
+                  </a>
+                </ion-label>
+              </ion-item>
+              <ion-item>
+                <ion-avatar slot="start">
+                  <ion-icon name="logo-tux"></ion-icon>
+                </ion-avatar>
+                <ion-label>
+                  <h2>Ms.Ngọc</h2>
+                  <a href="tel:0978225941">
+                    <ion-button>Số điện thoại: 0978225941</ion-button>
+                  </a>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </div>
   </div>
   <div class="bg-mid">
@@ -54,8 +90,8 @@
           </ion-card-header>
           <ion-card-content>
             <ion-label>BÁO GIÁ LIÊN HỆ: </ion-label>
-            Ms: Như 0385390164, 
-            Ms. Ngọc 0978225941
+            Ms.Như 0385390164, 
+            Ms.Ngọc 0978225941
           </ion-card-content>
         </ion-card>
       </swiper-slide>
