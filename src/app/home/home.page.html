@@ -9,8 +9,8 @@
 <ion-content [fullscreen]="true">
   <div class="bg-top">
     <div class="text">
-      <h1>CÔNG TY TNHH </h1>
-      <h2>THIẾT BỊ CÔNG NGHIỆP CNK</h2>
+      <h1 [class.color-flash]="flashLabel">CÔNG TY TNHH</h1>
+      <h2 [class.color-flash]="flashLabel">THIẾT BỊ CÔNG NGHIỆP CNK</h2>
       <ion-button color="warning" id="open-modal"><ion-icon name="call-outline"></ion-icon>Liên Hệ</ion-button>
       <ion-modal #modal trigger="open-modal">
         <ng-template>
@@ -23,25 +23,31 @@
             </ion-toolbar>
             <ion-list>
               <ion-item>
-                <ion-avatar slot="start">
-                  <ion-icon name="logo-ionitron"></ion-icon>
-                </ion-avatar>
                 <ion-label>
-                  <h2>Ms.Như</h2>
+                  <h2><strong><ion-icon name="person-outline"></ion-icon> Ms.Như</strong></h2>
                   <a href="tel:0385390164">
-                    <ion-button>Số điện thoại: 0385390164</ion-button>
+                    <ion-button><ion-icon name="call-outline"></ion-icon> Ấn để gọi ngay : 0385390164</ion-button>
                   </a>
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
+                    </ion-thumbnail>
+                    <ion-label><ion-icon name="call-outline"></ion-icon> Zalo liên hệ : 0385390164</ion-label>
+                  </ion-item>
                 </ion-label>
               </ion-item>
               <ion-item>
-                <ion-avatar slot="start">
-                  <ion-icon name="logo-tux"></ion-icon>
-                </ion-avatar>
                 <ion-label>
-                  <h2>Ms.Ngọc</h2>
+                  <h2><strong><ion-icon name="person-outline"></ion-icon> Ms.Ngọc</strong></h2>
                   <a href="tel:0978225941">
-                    <ion-button>Số điện thoại: 0978225941</ion-button>
+                    <ion-button><ion-icon name="call-outline"></ion-icon> Ấn để gọi ngay : 0978225941</ion-button>
                   </a>
+                  <ion-item>
+                    <ion-thumbnail slot="start">
+                      <img alt="Silhouette of mountains" src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
+                    </ion-thumbnail>
+                    <ion-label><ion-icon name="call-outline"></ion-icon> Zalo liên hệ : 0978225941</ion-label>
+                  </ion-item>
                 </ion-label>
               </ion-item>
             </ion-list>

@@ -86,3 +86,19 @@ ion-modal ion-toolbar {
     --background: rgb(14 116 144);
     --color: white;
 }
+
+.color-flash {
+    animation: flash 1s infinite alternate;
+}
+
+@keyframes flash {
+    0% {
+      color: red;
+    }
+    50% {
+      color: white;
+    }
+    100% {
+      color: yellow;
+    }
+}
