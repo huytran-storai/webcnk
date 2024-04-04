@@ -30,7 +30,8 @@
                   </a>
                   <ion-item>
                     <ion-thumbnail slot="start">
-                      <img alt="Silhouette of mountains" src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
+                      <img alt="Silhouette of mountains"
+                        src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
                     </ion-thumbnail>
                     <ion-label><ion-icon name="call-outline"></ion-icon> Zalo liên hệ : 0385390164</ion-label>
                   </ion-item>
@@ -44,7 +45,8 @@
                   </a>
                   <ion-item>
                     <ion-thumbnail slot="start">
-                      <img alt="Silhouette of mountains" src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
+                      <img alt="Silhouette of mountains"
+                        src="https://cdn.haitrieu.com/wp-content/uploads/2022/01/Logo-Zalo-App-Rec.png" />
                     </ion-thumbnail>
                     <ion-label><ion-icon name="call-outline"></ion-icon> Zalo liên hệ : 0978225941</ion-label>
                   </ion-item>
@@ -72,8 +74,10 @@
           <ion-card-content>
             "Công ty chúng tôi là địa chỉ đáng tin cậy, chuyên nhập khẩu và cung cấp trực tiếp các sản phẩm chất lượng
             từ những thương hiệu uy tín trên toàn cầu, phục vụ đa dạng ngành nghề như cơ khí chế tạo, xây dựng, sản xuất
-            và bảo hộ lao động. <br/> Với danh mục sản phẩm đa dạng như dụng cụ khí nén, đinh công nghiệp, dây đai, màng PE,
-            túi giữ ẩm, thước kéo và mặt nạ phòng độc, chúng tôi cam kết nhập khẩu đúng hãng với chứng chỉ CO/CQ. <br/>Đi kèm
+            và bảo hộ lao động. <br /> Với danh mục sản phẩm đa dạng như dụng cụ khí nén, đinh công nghiệp, dây đai,
+            màng PE,
+            túi giữ ẩm, thước kéo và mặt nạ phòng độc, chúng tôi cam kết nhập khẩu đúng hãng với chứng chỉ CO/CQ.
+            <br />Đi kèm
             với nguồn nhân lực có uy tín và cam kết về chất lượng, chúng tôi đang dần trở thành đối tác quen thuộc
             của nhiều công ty, nhà máy và khu công nghiệp."
           </ion-card-content>
@@ -85,7 +89,8 @@
     <div class="text-h2">
       <h1>Các sản phẩm cung cấp</h1>
     </div>
-    <swiper-container [slidesPerView]="2" [zoom]="false" navigation="true" [loop]="true" [speed]="1500" [autoplay]="{enable:true,delay:1500}">
+    <swiper-container [slidesPerView]="2" [zoom]="false" navigation="true" [loop]="true" [speed]="1500"
+      [autoplay]="{enable:true,delay:1500}">
       <swiper-slide *ngFor="let item of product">
         <ion-card>
           <ion-row>
@@ -95,9 +100,23 @@
             <ion-label>{{item.nameProd}}</ion-label>
           </ion-card-header>
           <ion-card-content>
-            <ion-label>BÁO GIÁ LIÊN HỆ: </ion-label>
-            Ms.Như 0385390164, 
-            Ms.Ngọc 0978225941
+            <ion-label>
+              <ion-icon name="call-outline"></ion-icon> <strong>Báo giá liên hệ</strong>
+            </ion-label>
+            <ion-row>
+              <ion-col>
+                Ms.Như
+                <a href="tel:0385390164">
+                  <ion-button>0385390164</ion-button>
+                </a>
+              </ion-col>
+              <ion-col>
+                Ms.Ngọc
+                <a href="tel:0978225941">
+                  <ion-button>0978225941</ion-button>
+                </a>
+              </ion-col>
+            </ion-row>
           </ion-card-content>
         </ion-card>
       </swiper-slide>
@@ -122,10 +141,12 @@
             "Chúng tôi cam kết đồng hành cùng khách hàng và đối tác để tạo lập các giá trị văn hóa và kinh tế, góp phần
             nâng cao chất lượng cuộc sống và sự phát triển trong ngành công nghiệp Việt Nam.
 
-            <br/>Chúng tôi luôn tuân thủ phương châm 'Uy Tín – Chất Lượng', đặt lên hàng đầu trong mọi hoạt động kinh doanh
+            <br />Chúng tôi luôn tuân thủ phương châm 'Uy Tín – Chất Lượng', đặt lên hàng đầu trong mọi hoạt động kinh
+            doanh
             của mình.
 
-            Rất mong nhận được sự quan tâm và ủng hộ từ quý khách hàng. <br/> Xin chúc quý khách hàng An Khang Thịnh Vượng!"
+            Rất mong nhận được sự quan tâm và ủng hộ từ quý khách hàng. <br /> Xin chúc quý khách hàng An Khang Thịnh
+            Vượng!"
           </ion-card-content>
         </ion-card>
       </ion-col>
@@ -139,7 +160,8 @@
     <div class="footer-content">
       <p>Mọi thông tin liên hệ:</p>
       <p>CÔNG TY TRÁCH NHIỆM HỮU HẠN THIẾT BỊ CÔNG NGHIỆP CNK</p>
-      <p>Địa chỉ: 72 Linh Trung, phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam. MST: 0317193833</p>
+      <p>Địa chỉ: 72 Linh Trung, phường Linh Trung, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam. MST: 0317193833
+      </p>
       <p>EMAIL: cnk.tbcn&#64;gmail.com</p>
       <p>Ms. Nhu | SĐT: 0837529408</p>
     </div>
